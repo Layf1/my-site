@@ -179,9 +179,6 @@ input:focus, select:focus, textarea:focus {
     background-color: #2b6cb0;
 }
 
-/* ==========================================================================
-   ИСПРАВЛЕНИЯ ДЛЯ СТРАНИЦЫ ГАЛЕРЕИ (КОТИКИ)
-   ========================================================================== */
 
 /* Блок управления фильтрами */
 .filters, .controls-panel {
@@ -199,7 +196,7 @@ input:focus, select:focus, textarea:focus {
     margin-top: 10px;
 }
 
-/* Кнопки фильтров (ИСПРАВЛЕНО: Текст теперь четко видно) */
+/* Кнопки фильтров*/
 .filter-btn, .view-btn {
     padding: 8px 16px !important;
     background-color: #edf2f7 !important;
@@ -275,7 +272,7 @@ input:focus, select:focus, textarea:focus {
     opacity: 1;
 }
 
-/* Кнопки внутри картинки (ИСПРАВЛЕНО: Белые плашки с четким текстом) */
+/* Кнопки внутри картинки  */
 .like-btn, .zoom-btn {
     background-color: #ffffff !important;
     color: #e53e3e !important; /* Красное сердечко */
