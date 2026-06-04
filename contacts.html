@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Flexbox макет</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="fx-contacts-page">
+
+    <div class="fx-container">
+        
+        <header class="fx-header">
+            <div class="fx-logo">
+                <h1><i class="fas fa-address-book"></i> Раздел Контакты</h1>
+            </div>
+            <nav class="fx-nav">
+                <ul class="fx-nav-list">
+                    <li><a href="index.html" class="fx-nav-link">Главная</a></li>
+                    <li><a href="gallery.html" class="fx-nav-link">Галерея</a></li>
+                    <li><a href="contacts.html" class="fx-nav-link active">Контакты</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="fx-main-layout">
+            
+            <aside class="fx-sidebar">
+                <div class="fx-card animate-box">
+                    <h3><i class="fas fa-user-circle"></i> Автор проекта</h3>
+                    <p class="fx-author">Веселов Павел Ильич</p>
+                    <p><strong>Студент:</strong> 1 курса</p>
+                    <p><strong>Тема сайта:</strong>Котики </p>
+                    <p><strong>Город:</strong> Москва</p>
+                    <p><strong>Email:</strong> <a href="mailto:\Kotiki@yandex.ru">Kotiki@yandex.ru</a></p>
+                    <div class="fx-socials">
+                        <a href="https://web.telegram.org/k/#@kotyg" class="fx-soc-item tg"></i> TG</a>
+                        <a href="https://vk.com/catballoon" class="fx-soc-item vk"></i> VK</a>
+                    </div>
+                </div>
+
+                <div class="fx-card animate-box">
+                    <h3> Доступность</h3>
+                    <p>Будни: 09:00 — 18:00</p>
+                    <p>Выходные: Время котиков</p>
+                </div>
+            </aside>
+
+            <section class="fx-content">
+                <form class="fx-card fx-form animate-box" action="#" method="POST">
+                    <h2>Напишите мне сообщение</h2>
+                    
+                    <div class="fx-input-group">
+                        <label for="fx-name" class="fx-required">Ваше имя</label>
+                        <input type="text" id="fx-name" placeholder="Имя" required>
+                    </div>
+
+                    <div class="fx-input-group">
+                        <label for="fx-email" class="fx-required">Электронная почта</label>
+                        <input type="email" id="fx-email" placeholder="example@mail.ru" required>
+                    </div>
+
+                    <div class="fx-input-group">
+                        <label for="fx-select">Тема вопроса</label>
+                        <select id="fx-select">
+                            <option value="1">Предложить фото котика</option>
+                            <option value="2">Вопрос по веб-разработке</option>
+                            <option value="3">Другое</option>
+                        </select>
+                    </div>
+
+                    <div class="fx-input-group">
+                        <label for="fx-text" class="fx-required">Сообщение</label>
+                        <textarea id="fx-text" rows="4" placeholder="Текст вашего сообщения..." required></textarea>
+                    </div>
+
+                    <div class="fx-input-group fx-checkbox-row">
+                        <input type="checkbox" id="fx-agree" required>
+                        <label encoding="checkbox-text" for="fx-agree">Согласен на обработку данных</label>
+                    </div>
+
+                    <button type="submit" class="fx-submit-btn">Отправить </button>
+                </form>
+            </section>
+
+        </main>
+
+        <section class="fx-faq-section fx-card">
+            <h2> Вопросы и ответы</h2>
+            <div class="fx-faq-container">
+                <div class="fx-faq-item">
+                    <h4>Зачем создан этот сайт?</h4>
+                    <p>Проект разработан для демонстрации навыков адаптивной Flexbox-верстки на 1 курсе.</p>
+                </div>
+                <div class="fx-faq-item">
+                    <h4>Сайт работает на мобильных устройствах?</h4>
+                    <p>Да, благодаря свойствам Flexbox макет подстраивается под любые размеры экранов.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="fx-footer">
+            <p>© 2026 Павел </p>
+        </footer>
+
+    </div>
+
+</body>
+</html>

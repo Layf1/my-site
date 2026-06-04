@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея - Котики</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="gallery-header">
+        <div class="header-content">
+            <h1><i class="fas fa-images"></i> Фотогалерея</h1>
+            <p class="subtitle">Коллекция изображений по теме: <span class="theme-name">Котики</span></p>
+        </div>
+        
+       <nav class="main-nav">
+    <ul class="nav-grid">
+        <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Главная</a></li>
+        <li><a href="gallery.html" class="nav-link active"><i class="fas fa-camera"></i> Галерея</a></li>
+        <li><a href="contacts.html" class="nav-link"><i class="fas fa-address-book"></i> Контакты</a></li>
+    </ul>
+</nav>
+    </header>
+
+    <main class="gallery-container">
+        <div class="controls-panel">
+            <div class="stats">
+                <span class="stat-item">
+                    <i class="fas fa-image"></i>
+                    Изображений: <span id="image-counter">0</span>
+                </span>
+                <span class="stat-item">
+                    <i class="fas fa-heart"></i>
+                    Всего лайков: <span id="total-likes">0</span>
+                </span>
+            </div>
+            
+            <div class="view-controls">
+                <button id="grid-view" class="view-btn active">
+                    <i class="fas fa-th"></i> Сетка
+                </button>
+                <button id="list-view" class="view-btn">
+                    <i class="fas fa-list"></i> Список
+                </button>
+            </div>
+        </div>
+        
+        <div class="filters">
+            <h3><i class="fas fa-filter"></i> Фильтры:</h3>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="silly">Глупый</button>
+                <button class="filter-btn" data-filter="cute">Милый</button>
+                <button class="filter-btn" data-filter="city">Город</button>
+            </div>
+        </div>
+        
+        <div class="gallery-grid" id="image-gallery">
+    <article class="image-card" data-category="silly">
+        <div class="card-image">
+            <img src="images/Cat 1.jpg" 
+                 alt="Описание первого изображения"
+                 class="gallery-img"
+                 loading="lazy">
+            <div class="image-overlay">
+                <button class="like-btn" data-id="1">
+                    <i class="far fa-heart"></i>
+                    <span class="like-count">0</span>
+                </button>
+                <button class="zoom-btn">
+                    <i class="fas fa-expand"></i>
+                </button>
+            </div>
+        </div>
+        <div class="card-content">
+            <h3 class="image-title">Котик 1</h3>
+            <p class="image-date"> 15 марта 2024</p>
+            <p class="image-description">Котик</p>
+            <div class="image-tags">
+                <span class="tag">глупый</span>
+                <span class="tag">милый</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="image-card" data-category="city">
+        <div class="card-image">
+            <img src="images/Cat 2.jpg" 
+                 alt="Описание второго изображения"
+                 class="gallery-img"
+                 loading="lazy">
+            <div class="image-overlay">
+                <button class="like-btn" data-id="2">
+                    <i class="far fa-heart"></i>
+                    <span class="like-count">0</span>
+                </button>
+                <button class="zoom-btn">
+                    <i class="fas fa-expand"></i>
+                </button>
+            </div>
+        </div>
+        <div class="card-content">
+            <h3 class="image-title">Котик 2</h3>
+            <p class="image-date">20 марта 2024</p>
+            <p class="image-description">Котик</p>
+            <div class="image-tags">
+                <span class="tag">город</span>
+                <span class="tag">архитектура</span>
+            </div>
+        </div>
+    </article>
+
+    <article class="image-card" data-category="cute">
+        <div class="card-image">
+            <img src="images/Cat 3.jpg" 
+                 alt="Описание первого изображения"
+                 class="gallery-img"
+                 loading="lazy">
+            <div class="image-overlay">
+                <button class="like-btn" data-id="3">
+                    <i class="far fa-heart"></i>
+                    <span class="like-count">0</span>
+                </button>
+                <button class="zoom-btn">
+                    <i class="fas fa-expand"></i>
+                </button>
+            </div>
+        </div>
+        <div class="card-content">
+            <h3 class="image-title">Котик 3</h3>
+            <p class="image-date"> 15 марта 2024</p>
+            <p class="image-description">Котик</p>
+            <div class="image-tags">
+                <span class="tag">глупый</span>
+                <span class="tag">милый</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="image-card" data-category="city">
+        <div class="card-image">
+            <img src="images/Cat 4.jpg" 
+                 alt="Описание второго изображения"
+                 class="gallery-img"
+                 loading="lazy">
+            <div class="image-overlay">
+                <button class="like-btn" data-id="4">
+                    <i class="far fa-heart"></i>
+                    <span class="like-count">0</span>
+                </button>
+                <button class="zoom-btn">
+                    <i class="fas fa-expand"></i>
+                </button>
+            </div>
+        </div>
+        <div class="card-content">
+            <h3 class="image-title">Котик 4</h3>
+            <p class="image-date"> 20 марта 2024</p>
+            <p class="image-description">Котик</p>
+            <div class="image-tags">
+                <span class="tag">город</span>
+                <span class="tag">архитектура</span>
+            </div>
+        </div>
+    </article>
+
+    <article class="image-card" data-category="silly">
+        <div class="card-image">
+            <img src="images/Cat 5.jpg" 
+                 alt="Описание первого изображения"
+                 class="gallery-img"
+                 loading="lazy">
+            <div class="image-overlay">
+                <button class="like-btn" data-id="5">
+                    <i class="far fa-heart"></i>
+                    <span class="like-count">0</span>
+                </button>
+                <button class="zoom-btn">
+                    <i class="fas fa-expand"></i>
+                </button>
+            </div>
+        </div>
+        <div class="card-content">
+            <h3 class="image-title">Котик 5</h3>
+            <p class="image-date"> 15 марта 2024</p>
+            <p class="image-description">Котик</p>
+            <div class="image-tags">
+                <span class="tag">глупый</span>
+                <span class="tag">милый</span>
+            </div>
+        </div>
+    </article>
+    
+    <article class="image-card" data-category="city">
+        <div class="card-image">
+            <img src="images/Cat 6.jpg" 
+                 alt="Описание второго изображения"
+                 class="gallery-img"
+                 loading="lazy">
+            <div class="image-overlay">
+                <button class="like-btn" data-id="6">
+                    <i class="far fa-heart"></i>
+                    <span class="like-count">0</span>
+                </button>
+                <button class="zoom-btn">
+                    <i class="fas fa-expand"></i>
+                </button>
+            </div>
+        </div>
+        <div class="card-content">
+            <h3 class="image-title">Котик 6</h3>
+            <p class="image-date"> 20 марта 2024</p>
+            <p class="image-description">Котик</p>
+            <div class="image-tags">
+                <span class="tag">город</span>
+                <span class="tag">архитектура</span>
+            </div>
+        </div>
+    </article>
+</div>
+    
+        <aside class="gallery-info">
+            <h3> Интересный факт</h3>
+            <p>Супер интересный факт</p>
+        </aside>
+    </main>
+
+    <footer class="gallery-footer">
+        <div class="footer-content">
+            <p class="js-status">JavaScript загружен и работает!</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
