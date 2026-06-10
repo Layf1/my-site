@@ -57,13 +57,3 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 1000);
 });
 // Обработка формы контактов без перезагрузки и ошибок 405
-document.addEventListener('DOMContentLoaded', function() {
-    let form = document.getElementById('contactForm');
-    if (form) {
-        form.addEventListener('submit', function(event) {
-            event.preventDefault(); // Блокируем стандартную отправку и ошибку 405
-            alert('Спасибо! Ваше сообщение успешно отправлено.');
-            form.reset(); // Очищаем поля формы после отправки
-        });
-    }
-});
